@@ -1,9 +1,13 @@
-let entrada = +prompt("Simulador de elementos quimicos, ingrese la cantidad de elementos quimicos que quiere simular: ")
-
-function simulador (entrada){
-for(let i = 1; i <= entrada; i++){
-    alert("elementos "+i);
-}
-}
-
-simulador (entrada);
+let entrada = +prompt(
+    "Simulador de soluciones químicas, ingrese la cantidad de sustancias que quiere crear: "
+  );
+  function simulador(entrada) {
+    if (entrada >= 2) {
+          for (let i = 1; i <= entrada; i++) {
+            alert("sustancias " + i);
+          }
+    } else {
+        alert("Que sea mayor a 2!")
+    }
+  }
+  simulador(entrada);
